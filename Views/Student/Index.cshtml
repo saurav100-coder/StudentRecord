@@ -50,6 +50,8 @@
                 success: function (data) {
                     console.log(data.data);
                     var stuTable = $('#dataTable tbody');
+                    //let temp = document.querySelector('#dataTable');
+                    console.log(temp,stuTable);
                     stuTable.empty();
                     $(data.data).each(function (index, stu) {
                         //console.log(stu);
